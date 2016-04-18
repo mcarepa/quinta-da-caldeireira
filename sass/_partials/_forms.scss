@@ -1,0 +1,23 @@
+input, textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  box-shadow: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 15px 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-submit {
+  margin-top: 75px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}

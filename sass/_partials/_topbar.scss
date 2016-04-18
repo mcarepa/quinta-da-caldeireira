@@ -1,0 +1,126 @@
+$logo-width: 170px;
+$cta-width: 200px;
+$navbar-fixed-height: 90px;
+
+.navbar {
+  color: $text-color;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+
+  &.navbar-fixed {
+    background-color: rgba(white, 0.97);
+    border-bottom: 2px solid white;
+    display: block;
+    position: fixed;
+    height: $navbar-fixed-height;
+    z-index: 10;
+    top: -$navbar-fixed-height;
+
+    .navbar-logo {
+      background-color: transparent!important;
+      line-height: 1;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      height: auto;
+
+      .icon.icon-logo {
+        font-size: 38px;
+      }
+    }
+
+    .navbar-nav {
+      margin-top: 42px;
+
+      ul {
+        li {
+          line-height: 1;
+
+          a {
+            color: $text-color;
+            vertical-align: top;
+
+            &:after {
+              background-color: $text-color;
+            }
+
+            &.hvr-underline-from-center:hover:before {
+              background: $text-color;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-cta {
+      top: 25px;
+    }
+  }
+
+  .navbar-logo {
+    background-color: $farm-color;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5.7%;
+    padding: 40px 23px 23px;
+    text-align: center;
+    width: $logo-width;
+
+    .icon.icon-logo {
+      color: white;
+      font-size: 44px;
+    }
+
+    .logo-lettering {
+      margin-top: 13px;
+      width: 100%;
+    }
+  }
+
+  .navbar-nav {
+    float: left;
+    margin-top: 52px;
+    width: calc(100% - #{$logo-width + 74px + 82px + $cta-width});
+
+    ul {
+      @extend .clearfix;
+      margin-bottom: 0;
+
+      li {
+        float: left;
+        line-height: 1;
+
+        & + li {
+          margin-left: 9%;
+        }
+
+        a {
+          font-size: 12px;
+          line-height: 1;
+          vertical-align: top;
+
+          &:after {
+            left: 50%!important;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-cta {
+    position: absolute;
+    right: 0;
+    top: 34px;
+    float: right;
+    width: $cta-width;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

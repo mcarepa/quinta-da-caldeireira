@@ -1,0 +1,31 @@
+.btn {
+  font-family: "ADAMCGPRO", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  box-shadow: none;
+  border-radius: 0;
+  line-height: 28px;
+  height: 40px;
+  min-width: 194px;
+}
+
+.btn-default {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &:hover, &:active, &:focus {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    line-height: 26px;
+  }
+}
+
+.btn-primary {
+  border: none;
+  line-height: 30px;
+
+  &:hover, &:active, &:focus {
+    background-color: $brand-primary;
+  }
+}

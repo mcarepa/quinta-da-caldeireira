@@ -1,0 +1,27 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
+@import "_partials/fonts.scss";
+@import "_partials/containers.scss";
+@import "_partials/topbar.scss";
+@import "_partials/buttons.scss";
+@import "_partials/sections.scss";
+@import "_partials/landing.scss";
+@import "_partials/gallery.scss";
+@import "_partials/contacts.scss";
+@import "_partials/titles.scss";
+@import "_partials/parallax.scss";
+@import "_partials/overlay_form.scss";
+@import "_partials/hover_effects.scss";
+@import "_partials/forms.scss";
+@import "_partials/feedback.scss";
+@import "_partials/footer.scss";
+
+body {
+  position: relative;
+  z-index: 0;
+}

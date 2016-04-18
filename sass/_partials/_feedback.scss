@@ -1,0 +1,53 @@
+.feedback-entry {
+  padding: 0;
+
+  &:nth-child(2) {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+
+.feedback-entry-balloon {
+  background-color: $activities-color;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 18px;
+  padding: 25px 30px;
+  position: relative;
+  text-align: center;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 17px 0 17px;
+    border-color: $activities-color transparent transparent transparent;
+  }
+}
+
+.feedback-entry-person {
+  font-family: $font-family-sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+
+  p {
+    line-height: 1;
+  }
+
+  small {
+    color: #080808;
+    font-size: 12px;
+    display: block;
+    line-height: 1;
+    margin-top: 4px;
+  }
+}

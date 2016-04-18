@@ -1,0 +1,77 @@
+@include font-face("ADAMCGPRO", font-files("adamcgpro/adamcgpro.woff", "adamcgpro/adamcgpro.ttf", "adamcgpro/adamcgpro.svg"), "adamcgpro/adamcgpro.eot", normal, normal);
+@include font-face("quinta_icons", font-files("icons/icons.woff", "icons/icons.ttf", "icons/icons.svg"), "icons/icons.eot", normal, normal);
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "quinta_icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-room-one:before {
+    content: "\e900";
+}
+.icon-room-two:before {
+    content: "\e901";
+}
+.icon-room-three:before {
+    content: "\e902";
+}
+.icon-room-five:before {
+    content: "\e903";
+}
+.icon-room-four:before {
+    content: "\e904";
+}
+.icon-room-six:before {
+    content: "\e905";
+}
+.icon-close:before {
+    content: "\e906";
+}
+.icon-logo:before {
+    content: "\e907";
+}
+.icon-magnify:before {
+    content: "\e908";
+}
+.icon-cuisine:before {
+    content: "\e909";
+}
+.icon-mailbox:before {
+    content: "\e90a";
+}
+.icon-sofa:before {
+    content: "\e90b";
+}
+.icon-more-activities:before {
+    content: "\e90c";
+}
+.icon-mountains:before {
+    content: "\e90d";
+}
+.icon-walks:before {
+    content: "\e90e";
+}
+.icon-church:before {
+    content: "\e90f";
+}
+.icon-birdwatching:before {
+    content: "\e910";
+}
+.icon-fish:before {
+    content: "\e911";
+}
+.icon-moose:before {
+    content: "\e912";
+}
+
+

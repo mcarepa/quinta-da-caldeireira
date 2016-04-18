@@ -1,0 +1,52 @@
+.overlay {
+  background-color: rgba(black, 0.95);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  display: none;
+}
+
+body.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.reservation-form {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34%;
+  text-align: center;
+  z-index: 12;
+
+  display: none;
+
+  form {
+    margin-top: 38px;
+  }
+
+  .reservation-form-close {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 28px;
+    text-align: center;
+
+    a:hover:after, &:focus:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs) {
+  .reservation-form {
+    width: 90%;
+  }
+}
