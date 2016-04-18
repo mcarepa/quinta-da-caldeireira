@@ -93,6 +93,10 @@
   .navbar-fixed {
     border-color: rgba($farm-color, 0.2);
   }
+
+  .footer {
+    background-color: #200601;
+  }
 }
 
 .rooms-body {
@@ -108,6 +112,10 @@
 
   .navbar-fixed {
     border-color: rgba($rooms-color, 0.2);
+  }
+
+  .footer {
+    background-color: #1E1300;
   }
 }
 
@@ -125,6 +133,10 @@
   .navbar-fixed {
     border-color: rgba($common-spaces-color, 0.2);
   }
+
+  .footer {
+    background-color: #0A0E1B;
+  }
 }
 
 .activities-body {
@@ -141,6 +153,10 @@
   .navbar-fixed {
     border-color: rgba($activities-color, 0.2);
   }
+
+  .footer {
+    background-color: #120017;
+  }
 }
 
 .contacts-body {
@@ -156,5 +172,9 @@
 
   .navbar-fixed {
     border-color: rgba($contacts-color, 0.2);
+  }
+
+  .footer {
+    background-color: #1B0401;
   }
 }

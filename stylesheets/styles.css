@@ -9260,65 +9260,85 @@ button.close {
 .farm-body .navbar-fixed {
   border-color: rgba(255, 128, 128, 0.2);
 }
+/* line 97, ../sass/_partials/_sections.scss */
+.farm-body .footer {
+  background-color: #200601;
+}
 
-/* line 99, ../sass/_partials/_sections.scss */
+/* line 103, ../sass/_partials/_sections.scss */
 .rooms-body .navbar .navbar-logo,
 .rooms-body .gallery-main .gallery-description {
   background-color: #edaa0c;
 }
-/* line 104, ../sass/_partials/_sections.scss */
+/* line 108, ../sass/_partials/_sections.scss */
 .rooms-body .footer .title,
 .rooms-body .navbar-fixed .navbar-logo .icon.icon-logo {
   color: #edaa0c;
 }
-/* line 109, ../sass/_partials/_sections.scss */
+/* line 113, ../sass/_partials/_sections.scss */
 .rooms-body .navbar-fixed {
   border-color: rgba(237, 170, 12, 0.2);
 }
+/* line 117, ../sass/_partials/_sections.scss */
+.rooms-body .footer {
+  background-color: #1E1300;
+}
 
-/* line 115, ../sass/_partials/_sections.scss */
+/* line 123, ../sass/_partials/_sections.scss */
 .common-spaces-body .navbar .navbar-logo,
 .common-spaces-body .gallery-main .gallery-description {
   background-color: #5f87c8;
 }
-/* line 120, ../sass/_partials/_sections.scss */
+/* line 128, ../sass/_partials/_sections.scss */
 .common-spaces-body .footer .title,
 .common-spaces-body .navbar-fixed .navbar-logo .icon.icon-logo {
   color: #5f87c8;
 }
-/* line 125, ../sass/_partials/_sections.scss */
+/* line 133, ../sass/_partials/_sections.scss */
 .common-spaces-body .navbar-fixed {
   border-color: rgba(95, 135, 200, 0.2);
 }
+/* line 137, ../sass/_partials/_sections.scss */
+.common-spaces-body .footer {
+  background-color: #0A0E1B;
+}
 
-/* line 131, ../sass/_partials/_sections.scss */
+/* line 143, ../sass/_partials/_sections.scss */
 .activities-body .navbar .navbar-logo,
 .activities-body .gallery-main .gallery-description {
   background-color: #733aac;
 }
-/* line 136, ../sass/_partials/_sections.scss */
+/* line 148, ../sass/_partials/_sections.scss */
 .activities-body .footer .title,
 .activities-body .navbar-fixed .navbar-logo .icon.icon-logo {
   color: #733aac;
 }
-/* line 141, ../sass/_partials/_sections.scss */
+/* line 153, ../sass/_partials/_sections.scss */
 .activities-body .navbar-fixed {
   border-color: rgba(115, 58, 172, 0.2);
 }
+/* line 157, ../sass/_partials/_sections.scss */
+.activities-body .footer {
+  background-color: #120017;
+}
 
-/* line 147, ../sass/_partials/_sections.scss */
+/* line 163, ../sass/_partials/_sections.scss */
 .contacts-body .navbar .navbar-logo,
 .contacts-body .gallery-main .gallery-description {
   background-color: #6b1a05;
 }
-/* line 152, ../sass/_partials/_sections.scss */
+/* line 168, ../sass/_partials/_sections.scss */
 .contacts-body .footer .title,
 .contacts-body .navbar-fixed .navbar-logo .icon.icon-logo {
   color: #6b1a05;
 }
-/* line 157, ../sass/_partials/_sections.scss */
+/* line 173, ../sass/_partials/_sections.scss */
 .contacts-body .navbar-fixed {
   border-color: rgba(107, 26, 5, 0.2);
+}
+/* line 177, ../sass/_partials/_sections.scss */
+.contacts-body .footer {
+  background-color: #1B0401;
 }
 
 /* line 1, ../sass/_partials/_landing.scss */
@@ -10049,7 +10069,6 @@ input:-webkit-autofill {
 /* line 1, ../sass/_partials/_footer.scss */
 .footer {
   display: none;
-  background-color: black;
   color: white;
   padding-top: 66px;
   position: relative;
@@ -10078,7 +10097,6 @@ input:-webkit-autofill {
 /* line 28, ../sass/_partials/_footer.scss */
 .footer small {
   display: inline-block;
-  color: #6c6c6c;
   margin-top: 4px;
 }
 /* line 34, ../sass/_partials/_footer.scss */
