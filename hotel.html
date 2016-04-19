@@ -19,8 +19,34 @@
   <![endif]-->
 </head>
 <body class="farm-body">
+  <!-- MOBILE TOPBAR -->
+  <div class="navbar navbar-mobile visible-xs">
+    <a href="index.html" class="navbar-logo no-hover">
+      <i class="icon icon-logo"></i>
+      <img src="images/logo_lettering_h_farm.png" class="logo-lettering"/>
+    </a>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="nav navbar-nav">
+        <ul class="list-unstyled">
+          <li><a href="hotel.html">A Quinta</a></li>
+          <li><a href="rooms.html">Quartos</a></li>
+          <li><a href="common_spaces.html">Espaços Comuns</a></li>
+          <li><a href="activities.html">Experiências</a></li>
+          <li><a href="contacts.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <!-- FIXED TOPBAR -->
-  <div class="navbar navbar-fixed">
+  <div class="navbar navbar-fixed hidden-xs">
     <a href="index.html" class="navbar-logo no-hover">
       <i class="icon icon-logo"></i>
     </a>
@@ -43,7 +69,7 @@
   <!-- MAIN LANDING -->
   <div class="main">
     <div class="gallery-cover">
-      <div class="navbar">
+      <div class="navbar hidden-xs">
         <a href="index.html" class="navbar-logo no-hover">
           <i class="icon icon-logo"></i>
           <img src="images/logo_lettering.png" class="logo-lettering"/>
@@ -100,31 +126,31 @@
           </div>
 
           <div class="row gallery-photos-wrapper">
-            <div class="gallery-photo col-xs-4 venobox">
+            <div class="gallery-photo col-xs-6 col-sm-4 venobox">
               <div class="gallery-photo-inner">
                 <a class="venobox" data-gall="farm" href="images/bg/rooms.jpg"><img src="images/bg/rooms.jpg"></a>
               </div>
             </div>
 
-            <div class="gallery-photo col-xs-4">
+            <div class="gallery-photo col-xs-6 col-sm-4">
               <div class="gallery-photo-inner">
                 <a class="venobox" data-gall="farm" href="images/bg/rooms.jpg"><img src="images/bg/rooms.jpg"></a>
               </div>
             </div>
 
-            <div class="gallery-photo col-xs-4">
+            <div class="gallery-photo col-xs-6 col-sm-4">
               <div class="gallery-photo-inner">
                 <a class="venobox" data-gall="farm" href="images/bg/rooms.jpg"><img src="images/bg/rooms.jpg"></a>
               </div>
             </div>
 
-            <div class="gallery-photo col-xs-4">
+            <div class="gallery-photo col-xs-6 col-sm-4">
               <div class="gallery-photo-inner">
                 <a class="venobox" data-gall="farm" href="images/bg/rooms.jpg"><img src="images/bg/rooms.jpg"></a>
               </div>
             </div>
 
-            <div class="gallery-photo col-xs-4">
+            <div class="gallery-photo col-xs-6 col-sm-4">
               <div class="gallery-photo-inner">
                 <a class="venobox" data-gall="farm" href="images/bg/rooms.jpg"><img src="images/bg/rooms.jpg"></a>
               </div>
@@ -142,13 +168,13 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-1">
+        <div class="col-xs-12 col-sm-1 hidden-xs">
           <a href="index.html" class="no-hover">
             <i class="icon icon-logo"></i>
           </a>
         </div>
 
-        <div class="col-xs-3 address-info-wrapper">
+        <div class="col-xs-12 col-sm-3 address-info-wrapper">
           <div class="address-info-entry">
             <h6 class="title">Morada</h6>
             <p class="sans-serif">Quinta da Caldeireira s/n, <br>6060-000 Rosmaninhal</p>
@@ -165,18 +191,18 @@
           </div>
         </div>
 
-        <div class="col-xs-2">
+        <div class="col-xs-12 col-sm-2 footer-nav">
           <h6 class="title">Navegação</h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="active">A Quinta</a></li>
-            <li><a href="rooms.html" class="hvr-underline-from-left">Quartos</a></li>
-            <li><a href="common_spaces.html" class="hvr-underline-from-left">Espaços Comuns</a></li>
-            <li><a href="activities.html" class="hvr-underline-from-left">Experiências</a></li>
-            <li><a href="contacts.html" class="hvr-underline-from-left">Contactos</a></li>
+            <li><a href="#" class="hvr-underline-from-left">A Quinta</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Quartos</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Espaços Comuns</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Experiências</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Contactos</a></li>
           </ul>
         </div>
 
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-4 footer-events">
           <h6 class="title">Últimos Eventos</h6>
 
           <ul class="list-unstyled">
@@ -194,7 +220,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="hidden-xs">
               <a href="#" class="hvr-underline-from-left">
                 <p>RGA - Reunião geral de alunos</p>
                 <small>Quinta-feira às 18h</small>
@@ -207,8 +233,8 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-6">
-          <small><span class="sans-serif">Copyright ©</span> www.miguelcarepa.com</small>
+        <div class="col-xs-12 col-sm-6 copyright">
+          <small>Copyright © <span class="sans-serif">www.miguelcarepa.com</span></small>
         </div>
 
         <div class="col-xs-3 pull-right">
@@ -259,6 +285,7 @@
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/autosize.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/jquery-imagefill.js"></script>

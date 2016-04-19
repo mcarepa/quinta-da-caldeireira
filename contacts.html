@@ -13,14 +13,39 @@
   <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
   <link href="stylesheets/styles.css" rel="stylesheet" type="text/css"/>
-  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
   <!--[if IE]>
       <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 </head>
 <body class="contacts-body">
+  <!-- MOBILE TOPBAR -->
+  <div class="navbar navbar-mobile visible-xs">
+    <a href="index.html" class="navbar-logo no-hover">
+      <i class="icon icon-logo"></i>
+      <img src="images/logo_lettering_h_contacts.png" class="logo-lettering"/>
+    </a>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="nav navbar-nav">
+        <ul class="list-unstyled">
+          <li><a href="hotel.html">A Quinta</a></li>
+          <li><a href="rooms.html">Quartos</a></li>
+          <li><a href="common_spaces.html">Espaços Comuns</a></li>
+          <li><a href="activities.html">Experiências</a></li>
+          <li><a href="contacts.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <!-- FIXED TOPBAR -->
-  <div class="navbar navbar-fixed">
+  <div class="navbar navbar-fixed hidden-xs">
     <a href="index.html" class="navbar-logo no-hover">
       <i class="icon icon-logo"></i>
     </a>
@@ -43,7 +68,7 @@
   <!-- MAIN LANDING -->
   <div class="main">
     <div class="gallery-cover">
-      <div class="navbar">
+      <div class="navbar hidden-xs">
         <a href="index.html" class="navbar-logo no-hover">
           <i class="icon icon-logo"></i>
           <img src="images/logo_lettering.png" class="logo-lettering"/>
@@ -76,32 +101,36 @@
       <h2 class="title">Contactos</h2>
     </div>
 
-      <div class="contacts-main gallery-main">
-        <div class="gallery-description">
-          <div class="gallery-description-inner">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <div class="icons-wrapper">
-                  <i class="icon icon-mailbox"></i>
-                </div>
+    <div class="contacts-main gallery-main">
+      <div class="gallery-description">
+        <div class="gallery-description-inner">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="icons-wrapper">
+                <i class="icon icon-mailbox"></i>
+              </div>
 
-                <div class="description-wrapper">
-                  <div class="row contacts-description">
-                    <div class="col-sm-4">
-                      <h5>Telefone</h5>
-                      <p>917048388</p>
-                    </div> 
+              <div class="description-wrapper">
+                <div class="row contacts-description">
+                  <div class="col-xs-12 visible-xs">
+                    <h5>Morada</h5>
+                    <p>Quinta da Caldeireira s/n, <br>6060-000 Rosmaninhal</p>
+                  </div>
 
-                    <div class="col-sm-4">
-                      <h5>Morada</h5>
-                      <p>Quinta da Caldeireira s/n, <br>6060-000 Rosmaninhal</p>
-                    </div>
-                  
-                    <div class="col-sm-4">
-                      <h5>GPS</h5>
-                      <p>302.20, 1024.30</p>
-                    </div>
-                  
+                  <div class="col-xs-12 col-sm-4">
+                    <h5>Telefone</h5>
+                    <p>917048388</p>
+                  </div> 
+
+                  <div class="col-sm-4 hidden-xs">
+                    <h5>Morada</h5>
+                    <p>Quinta da Caldeireira s/n, <br>6060-000 Rosmaninhal</p>
+                  </div>
+                
+                  <div class="col-xs-12 col-sm-4">
+                    <h5>GPS</h5>
+                    <p>302.20, 1024.30</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,11 +140,11 @@
 
       <div class="contacts-section container-fluid">
         <div class="row">
-          <div class="col-xs-6 contacts-map">
+          <div class="col-xs-12 col-sm-6 contacts-map">
             <div id="map"></div>
           </div>
 
-          <div class="col-xs-6 contacts-form base-container">
+          <div class="col-xs-12 col-sm-6 contacts-form base-container">
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
                  <div class="row">
@@ -149,16 +178,17 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-1">
+        <div class="col-xs-12 col-sm-1 hidden-xs">
           <a href="index.html" class="no-hover">
             <i class="icon icon-logo"></i>
           </a>
         </div>
 
-        <div class="col-xs-3 address-info-wrapper">
+        <div class="col-xs-12 col-sm-3 address-info-wrapper">
           <div class="address-info-entry">
             <h6 class="title">Morada</h6>
             <p class="sans-serif">Quinta da Caldeireira s/n, <br>6060-000 Rosmaninhal</p>
@@ -175,18 +205,18 @@
           </div>
         </div>
 
-        <div class="col-xs-2">
+        <div class="col-xs-12 col-sm-2 footer-nav">
           <h6 class="title">Navegação</h6>
           <ul class="list-unstyled">
-            <li><a href="hotel.html" class="hvr-underline-from-left">A Quinta</a></li>
-            <li><a href="rooms.html" class="hvr-underline-from-left">Quartos</a></li>
-            <li><a href="common_spaces.html" class="hvr-underline-from-left">Espaços Comuns</a></li>
-            <li><a href="activities.html" class="hvr-underline-from-left">Experiências</a></li>
-            <li><a href="#" class="active">Contactos</a></li>
+            <li><a href="#" class="hvr-underline-from-left">A Quinta</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Quartos</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Espaços Comuns</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Experiências</a></li>
+            <li><a href="#" class="hvr-underline-from-left">Contactos</a></li>
           </ul>
         </div>
 
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-4 footer-events">
           <h6 class="title">Últimos Eventos</h6>
 
           <ul class="list-unstyled">
@@ -204,7 +234,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="hidden-xs">
               <a href="#" class="hvr-underline-from-left">
                 <p>RGA - Reunião geral de alunos</p>
                 <small>Quinta-feira às 18h</small>
@@ -217,11 +247,11 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-6">
-          <small><span class="sans-serif">Copyright ©</span> www.miguelcarepa.com</small>
+        <div class="col-xs-12 col-sm-6 copyright">
+          <small>Copyright © <span class="sans-serif">www.miguelcarepa.com</span></small>
         </div>
 
-        <div class="col-xs-3 pull-right">
+        <div class="col-xs-12 col-sm-3 pull-right">
           <i class=""></i>
           <i class=""></i>
         </div>
@@ -269,6 +299,7 @@
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/autosize.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/jquery-imagefill.js"></script>

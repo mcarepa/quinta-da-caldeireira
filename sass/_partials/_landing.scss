@@ -30,6 +30,10 @@
 
       .event-title {
         font-family: $font-family-sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0 auto;
       }
     }
   }
@@ -60,6 +64,10 @@
   .common-spaces-images {
     height: 318px;
     overflow: hidden;
+
+    .row, .col-xs-6 {
+      height: 100%;
+    }
   }
 }
 
@@ -138,5 +146,104 @@
     left: 0;
     bottom: 0;
     z-index: -1;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .landing-cover {    
+    .text-section {
+      text-align: center;
+      padding: 0 20px;
+      bottom: 90px;
+
+     .copy {
+      font-size: 15px;
+      line-height: 19px;
+      margin-top: 4px;
+
+      &:after {
+        margin-left: auto;
+      }
+     }
+
+      .title {
+        font-size: 26px;
+        line-height: 32px;
+      }
+
+      .next-event-section {
+        font-size: 12px;
+
+        .event-title {
+          width: 80%;
+        }
+      }
+    }
+
+    .full-cta-btn {
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .common-spaces-section {
+    .common-spaces-images {
+      height: 140px;
+    }
+
+    .common-spaces-col {
+      & + .common-spaces-col {
+        margin-top: 40px;
+      }
+    }
+
+    .title {
+      margin-bottom: 45px;
+    }
+  }
+
+  .landing-main {
+    .activities-section {
+      i {
+        margin-bottom: 16px;
+        margin-top: 35px;
+      }
+
+      .activities-row {
+        margin-top: -30px;
+
+        & + .activities-row {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .rooms-section {
+    .room-features-row + .room-features-row {
+      margin-top: 45px;
+    }
+
+    .row-feature-col {
+      .row-feature-text {
+        font-size: 14px;
+      }
+    }
+
+    .title {
+      margin-bottom: 45px;
+    }
+
+    i {
+      margin-bottom: 12px;
+    }
+  }
+
+  .farm-section {
+    .title {
+      padding: 0 24px;
+    }
   }
 }

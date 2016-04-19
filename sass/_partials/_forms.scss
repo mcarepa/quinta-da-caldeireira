@@ -21,3 +21,9 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset !important;
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .form-submit {
+    margin-top: 25px;
+  }
+}

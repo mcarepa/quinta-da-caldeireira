@@ -124,3 +124,98 @@ $navbar-fixed-height: 90px;
     }
   }
 }
+
+.navbar.navbar-mobile {
+  background-color: rgba(white, 0.98);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 65px;
+  border-bottom: 2px solid white;
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    background-color: transparent!important;
+    padding: 0;
+    margin: 14px 20px;
+    width: auto;
+
+    .icon.icon-logo {
+      font-size: 36px;
+      color: $farm-color;
+    }
+
+    .logo-lettering {
+      display: inline-block;
+      margin-left: 15px;
+      margin-top: 0;
+      height: 25px;
+      max-width: 107px;
+      width: auto;
+    }
+  }
+
+  .navbar-toggle {
+    background-color: $farm-color;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    width: 65px;
+    height: 100%;
+    transition: background-color 0.2s ease-in;
+
+    &:not(.collapsed) {
+      background-color: #fff5f6;
+    }
+
+    .icon-bar {
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .navbar-collapse {
+    background-color: #fff5f6;
+    border-bottom: 2px solid $farm-color;
+    border-top: none;
+    margin-top: 62px;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+    ul {
+      text-align: center;
+
+      li {
+        display: block;
+        padding: 0;
+        width: 100%;
+
+        a {
+          display: block;
+          text-align: center;
+          color: #7c7c7c;
+          font-size: 13px;
+          padding: 25px 10px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        & + li {
+          border-top: 1px solid rgba($text-color, 0.05);
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

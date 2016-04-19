@@ -8,9 +8,7 @@ $(function() {
     infinigall: true
   });
 
-  //frameheight: wHeight - 100 + 'px'
-
-  $('.image-separator:not(.with-slideshow), .gallery-cover-image, .gallery-photo-inner').imagefill();
+  $('.image-separator:not(.with-slideshow), .gallery-cover-image, .gallery-photo-inner, .js-image-fill').imagefill();
 
   $(window).scroll(function() {
     var height;

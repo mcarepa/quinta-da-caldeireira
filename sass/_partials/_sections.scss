@@ -81,16 +81,21 @@
 
 .farm-body {
   .navbar .navbar-logo,
-  .gallery-main .gallery-description {
+  .gallery-main .gallery-description,
+  .navbar-mobile .navbar-toggle,
+  .navbar-mobile .navbar-toggle:not(.collapsed) .icon-bar {
     background-color: $farm-color;
   }
 
   .footer .title,
-  .navbar-fixed .navbar-logo .icon.icon-logo {
+  .navbar-fixed .navbar-logo .icon.icon-logo,
+  .navbar-mobile .navbar-logo .icon.icon-logo {
     color: $farm-color;
   }
 
-  .navbar-fixed {
+  .navbar-fixed,
+  .navbar-mobile,
+  .navbar-mobile .navbar-collapse {
     border-color: rgba($farm-color, 0.2);
   }
 
@@ -101,16 +106,21 @@
 
 .rooms-body {
   .navbar .navbar-logo,
-  .gallery-main .gallery-description {
+  .gallery-main .gallery-description,
+  .navbar-mobile .navbar-toggle,
+  .navbar-mobile .navbar-toggle:not(.collapsed) .icon-bar {
     background-color: $rooms-color;
   }
 
   .footer .title,
-  .navbar-fixed .navbar-logo .icon.icon-logo {
+  .navbar-fixed .navbar-logo .icon.icon-logo,
+  .navbar-mobile .navbar-logo .icon.icon-logo {
     color: $rooms-color;
   }
 
-  .navbar-fixed {
+  .navbar-fixed,
+  .navbar-mobile,
+  .navbar-mobile .navbar-collapse {
     border-color: rgba($rooms-color, 0.2);
   }
 
@@ -121,16 +131,21 @@
 
 .common-spaces-body {
   .navbar .navbar-logo,
-  .gallery-main .gallery-description {
+  .gallery-main .gallery-description,
+  .navbar-mobile .navbar-toggle,
+  .navbar-mobile .navbar-toggle:not(.collapsed) .icon-bar {
     background-color: $common-spaces-color;
   }
 
   .footer .title,
-  .navbar-fixed .navbar-logo .icon.icon-logo {
+  .navbar-fixed .navbar-logo .icon.icon-logo,
+  .navbar-mobile .navbar-logo .icon.icon-logo {
     color: $common-spaces-color;
   }
 
-  .navbar-fixed {
+  .navbar-fixed,
+  .navbar-mobile,
+  .navbar-mobile .navbar-collapse {
     border-color: rgba($common-spaces-color, 0.2);
   }
 
@@ -141,16 +156,21 @@
 
 .activities-body {
   .navbar .navbar-logo,
-  .gallery-main .gallery-description {
+  .gallery-main .gallery-description,
+  .navbar-mobile .navbar-toggle,
+  .navbar-mobile .navbar-toggle:not(.collapsed) .icon-bar {
     background-color: $activities-color;
   }
 
   .footer .title,
-  .navbar-fixed .navbar-logo .icon.icon-logo {
+  .navbar-fixed .navbar-logo .icon.icon-logo,
+  .navbar-mobile .navbar-logo .icon.icon-logo {
     color: $activities-color;
   }
 
-  .navbar-fixed {
+  .navbar-fixed,
+  .navbar-mobile,
+  .navbar-mobile .navbar-collapse {
     border-color: rgba($activities-color, 0.2);
   }
 
@@ -161,16 +181,21 @@
 
 .contacts-body {
   .navbar .navbar-logo,
-  .gallery-main .gallery-description {
+  .gallery-main .gallery-description,
+  .navbar-mobile .navbar-toggle,
+  .navbar-mobile .navbar-toggle:not(.collapsed) .icon-bar {
     background-color: $contacts-color;
   }
 
   .footer .title,
-  .navbar-fixed .navbar-logo .icon.icon-logo {
+  .navbar-fixed .navbar-logo .icon.icon-logo,
+  .navbar-mobile .navbar-logo .icon.icon-logo {
     color: $contacts-color;
   }
 
-  .navbar-fixed {
+  .navbar-fixed,
+  .navbar-mobile,
+  .navbar-mobile .navbar-collapse {
     border-color: rgba($contacts-color, 0.2);
   }
 
