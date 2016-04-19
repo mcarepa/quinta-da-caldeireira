@@ -9288,6 +9288,44 @@ a.image-separator:hover:before {
   margin-left: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 225, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-logo {
+    margin-left: 25px;
+    margin-right: 45px;
+  }
+  /* line 230, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-nav {
+    width: calc(100% - 270px);
+  }
+  /* line 234, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-nav ul li + li {
+    margin-left: 30px;
+  }
+  /* line 240, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-cta {
+    width: 90px;
+  }
+  /* line 244, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-cta .btn {
+    min-width: auto;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 253, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-logo {
+    margin-left: 3.5%;
+    margin-right: 4%;
+  }
+  /* line 258, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-nav {
+    width: calc(100% - 500px);
+  }
+  /* line 262, ../sass/_partials/_topbar.scss */
+  .navbar .navbar-nav ul li + li {
+    margin-left: 35px;
+  }
+}
 /* line 1, ../sass/_partials/_buttons.scss */
 .btn {
   font-family: "ADAMCGPRO", "Helvetica Neue", Helvetica, Arial, sans-serif;

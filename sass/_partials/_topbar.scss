@@ -219,3 +219,50 @@ $navbar-fixed-height: 90px;
     }
   }
 }
+
+@media screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+  .navbar {
+    .navbar-logo {
+      margin-left: 25px;
+      margin-right: 45px;
+    }
+
+    .navbar-nav {
+      width: calc(100% - 270px);
+
+      ul li {
+        & + li {
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .navbar-cta {
+      width: 90px;
+
+
+      .btn {
+        min-width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+  .navbar {
+    .navbar-logo {
+      margin-left: 3.5%;
+      margin-right: 4%;
+    }
+
+    .navbar-nav {
+      width: calc(100% - 500px);
+
+      ul li {
+        & + li {
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+}
