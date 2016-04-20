@@ -1,9 +1,9 @@
 @include font-face("ADAMCGPRO", font-files("adamcgpro/adamcgpro.woff", "adamcgpro/adamcgpro.ttf", "adamcgpro/adamcgpro.svg"), "adamcgpro/adamcgpro.eot", normal, normal);
-@include font-face("quinta_icons", font-files("icons/icons.woff", "icons/icons.ttf", "icons/icons.svg"), "icons/icons.eot", normal, normal);
+@include font-face("Caldeireira Icons", font-files("icons/caldeireira_icons.woff", "icons/caldeireira_icons.ttf", "icons/caldeireira_icons.svg"), "icons/caldeireira_icons.eot", normal, normal);
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "quinta_icons" !important;
+    font-family: "Caldeireira Icons" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -16,62 +16,64 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-room-one:before {
-    content: "\e900";
-}
-.icon-room-two:before {
-    content: "\e901";
-}
-.icon-room-three:before {
+.icon-logo:before {
     content: "\e902";
 }
-.icon-room-five:before {
+.icon-close:before {
     content: "\e903";
 }
-.icon-room-four:before {
-    content: "\e904";
-}
-.icon-room-six:before {
-    content: "\e905";
-}
-.icon-close:before {
-    content: "\e906";
-}
-.icon-logo:before {
-    content: "\e907";
+.icon-schedule:before {
+    content: "\e900";
 }
 .icon-magnify:before {
-    content: "\e908";
-}
-.icon-cuisine:before {
-    content: "\e909";
+    content: "\e904";
 }
 .icon-mailbox:before {
-    content: "\e90a";
+    content: "\e905";
+}
+.icon-cuisine:before {
+    content: "\e906";
 }
 .icon-sofa:before {
-    content: "\e90b";
+    content: "\e907";
 }
 .icon-more-activities:before {
-    content: "\e90c";
+    content: "\e908";
 }
 .icon-mountains:before {
-    content: "\e90d";
+    content: "\e909";
 }
 .icon-walks:before {
-    content: "\e90e";
+    content: "\e90a";
 }
 .icon-church:before {
-    content: "\e90f";
-}
-.icon-birdwatching:before {
-    content: "\e910";
+    content: "\e90b";
 }
 .icon-fish:before {
-    content: "\e911";
+    content: "\e90c";
+}
+.icon-birdwatching:before {
+    content: "\e90d";
 }
 .icon-moose:before {
+    content: "\e90e";
+}
+.icon-room-one:before {
+    content: "\e90f";
+}
+.icon-room-four:before {
+    content: "\e911";
+}
+.icon-room-three:before {
+    content: "\e913";
+}
+.icon-room-two:before {
+    content: "\e910";
+}
+.icon-room-five:before {
     content: "\e912";
 }
-
+.icon-room-six:before {
+    content: "\e901";
+}
 

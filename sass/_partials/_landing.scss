@@ -27,6 +27,8 @@
 
     .next-event-section {
       font-size: 14px;
+      display: flex;
+      align-items: center;
 
       .event-title {
         font-family: $font-family-sans-serif;
@@ -34,6 +36,48 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         margin: 0 auto;
+        line-height: 1;
+      }
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        position: relative;
+
+        i {
+          font-size: 32px;
+        }
+
+        .date-day {
+          font-family: $font-family-sans-serif;
+          font-size: 14px;
+          line-height: 1;
+          position: absolute;
+          top: 14px;
+          left: 0;
+          text-align: center;
+          width: 100%;
+        }
+
+        .date-month {
+          font-family: $font-family-sans-serif;
+          font-size: 12px;
+          position: absolute;
+          text-align: center;
+          bottom: -22px;
+          left: 0;
+          width: 100%;
+        }
+      }
+
+      .text {
+        padding-left: 10px;
+        width: calc(100% - 32px);
+
+        .event-label {
+          line-height: 1;
+          margin-bottom: 5px;
+        }
       }
     }
   }
@@ -155,6 +199,7 @@
       text-align: center;
       padding: 0 20px;
       bottom: 90px;
+      left: 0;
 
      .copy {
       font-size: 15px;
@@ -172,10 +217,20 @@
       }
 
       .next-event-section {
+        display: block;
         font-size: 12px;
 
         .event-title {
           width: 80%;
+        }
+
+        .icon {
+          margin-bottom: 28px;
+        }
+
+        .icon, .text {
+          width: 100%;
+          text-align: center;
         }
       }
     }
